@@ -1,0 +1,162 @@
+.btnContainer{
+  margin-top: 4%;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.tbutton {
+  border: 3px solid #9F3D3D;
+  width: 10%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 26px;
+  border-radius: 15px;
+}
+
+.tbuttonColorCyan:hover{
+  color: #f3f6f9;
+  background-color: #1abc9cab;
+} 
+
+.tbuttonColorBlue{
+  background-color: #F5CECE;
+  color: #9F3D3D;
+}
+
+.tbuttonColorCyan{
+  background-color: #b8f7eaab;
+  color: #1abc9cc4;
+  border: 3px solid #1abc9cab;
+}
+
+.tbuttonColorBlue:hover{
+  color: #f3f6f9;
+  background-color:  #9F3D3D;
+} 
+
+.Score1{
+  margin-right: 10%;
+  text-align: right;
+} 
+
+.imgContainer{
+display: flex;
+height: 400px;
+width: 310px;
+margin-left: 39%;
+align-items: center;
+justify-content: center;
+}
+
+progress {
+  width: 100%;
+  height: 2rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #e5e5e5;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #e5e5e5;
+  border-radius: 10px;
+}
+
+progress::-webkit-progress-value {
+  background-color: #1abc9c;
+  border-radius: 10px;
+}
+
+.amount {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+}
+
+.borrowed {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+}
+
+.cash {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+}
+
+.icon-cash{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+}
+
+.cash-name {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  font-size: 26px;
+}
+
+.cash-amount{
+  color: #1abc9c;
+  font-size: 26px;
+}
+
+.progressbar__label {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #3d3b3b;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.progressbar {
+  position: relative;
+}
+
+.progressbar__fill {
+  width: 100%;
+}
+
+.cash-container{
+  display: flex;
+  flex-direction: row;
+  float: right;
+  text-align: right;
+  margin-right:1% ;
+  border: 1px rgba(0, 0, 0, 0.2) solid;
+  border-radius: 25px;
+  margin-top: 1%;
+  padding: 15px
+}
+
+.amount-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.amount-containerc {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.cash-containerl {
+  display: flex;
+  flex-direction: row;
+  float: left;
+  text-align: right;
+  margin-left: 1%;
+  border: 1px rgba(0, 0, 0, 0.2) solid;
+  border-radius: 25px;
+  margin-top: 2%;
+  padding: 15px
+}
+
+.progressbar__fillubal::-webkit-progress-value {
+  background-color: #F5CECE;
+  transition: width 2s ease-in-out;
+}

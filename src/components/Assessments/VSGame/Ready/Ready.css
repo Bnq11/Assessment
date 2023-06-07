@@ -1,0 +1,104 @@
+.Ready{
+  display: inline;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+  text-align: center;
+}
+
+.container{
+  height:auto;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  background-color: #fae19d00;  
+}
+
+.btn {
+  margin-top: 1%;
+  z-index: 1;
+  width: 15%;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 15px;
+  border: 3px solid #32437c;
+  font-size: 26px;
+  font-weight: 700;
+}
+.btntrvs {
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 15px;
+  border: 3px solid #32437c;
+  margin-top: 1%;
+  text-align: center;
+  font-size: 26px;
+  width: 20%;
+  color: #000;
+  z-index: 1;
+  cursor: pointer;
+}
+.btntrvs:hover{
+  background-color: rgb(200, 200, 219, 0.90);
+  border-radius: 15px;
+  border: 3px solid rgba(255, 255, 255);
+  color: rgb(255, 255, 255)
+} 
+
+.btn:hover{
+  background-color: rgb(200, 200, 219, 0.90);
+  border-radius: 15px;
+  border: 3px solid rgba(255, 255, 255);
+  color: rgb(255, 255, 255)
+} 
+  
+.tips{
+  display: flex;
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
+  flex-direction: column;
+  font-family:'Cairo'
+}
+
+.tips-header{
+  width: 100%;
+  margin: 0%;
+  text-align: right;
+  font-size: 26px;
+  line-height: 36px;
+  font-family:'Cairo'
+}
+
+.title{
+  font-size: 46px;
+  padding-top: 2%;
+  padding-bottom: 1%;
+  font-family:'Cairo'
+}
+
+.headersandbutton{
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  padding: 10px;
+  border: 1px black solid;
+  border-radius: 30px;
+  width: 60%;
+  margin-left: 20%;
+  font-family:'Cairo'
+}
+
+.containerinf{
+  display: flex;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  justify-content: space-evenly;
+}
+
+.space{
+  display: flex;
+  justify-content: space-between;
+}
