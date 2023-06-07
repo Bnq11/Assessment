@@ -1,0 +1,22 @@
+.card{
+    background-color: #0e0e0e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:12px; 
+    width: 152px;
+    height: 203px; 
+    transition: transform 0.3s ease-in-out;
+   }
+  
+  .card img{
+    max-width: 150px;
+    max-height: 300px; 
+    border-width: 20px;
+    border-color:black;
+  } 
+  
+  .card:hover {
+      transform: scale(1.1);
+  }
+  

@@ -1,0 +1,54 @@
+.container{
+    height: 300px;
+    width: 600px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1);
+    gap: 1em;
+    background-color: #fae19d00;
+  }
+  
+  .containers{
+    height: 300px;
+    width: 400px;
+    display: inline;
+    align-items: center;
+    background-color: #fae19d00;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px; 
+    margin-top: 20px;
+  }
+  .containers img{
+    max-width: 150px;
+    max-height: 300px;  
+    margin-bottom: 5%;
+  } 
+  
+.progressbar__fillvs::-webkit-progress-value {
+  background-color: #2E7105;
+  transition: width 2s ease-in-out;
+}
+
+.progressbar__fill::-moz-progress-bar {
+  background-color: rgb(200, 200, 219, 0.75);
+  transition: width 2s ease-in-out;
+}
+
+.progressbar {
+  position: relative;
+}
+
+.progressbar__fill {
+  width: 100%;
+}
+
+.progressbar__label {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  color: #3d3b3b;
+  font-size: 20px;
+  font-weight: 700;
+}
