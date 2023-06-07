@@ -41,9 +41,8 @@ function ReadyLayout() {
             <br/><br/>
             !في هذه اللعبة، مهمتك بسيطة
         <br/>
-        خلال هذه اللعبة سيعرض عليك عرض لكسب مال
-        <br/>
-        مبلغ المال سيكون مقسومًا لك ولطرف اخر اسمه محمد
+        خلال هذه اللعبة سيعرض عليك أربع بطاقات         <br/>
+       كل بطاقة تحتوي على مبلغ مختلف من المال 
         <br/>
         </h3>
         <div className="containerinf">
@@ -64,9 +63,9 @@ function ReadyLayout() {
             <div style={{height:"fit-content"}} className='headersandbutton my-auto'>
             <h3 className='tips-header'> 
             <br/>  <br/>  
-            اذا كنت تعتقد عن القسمة صحيحة وعادلة اضغط قبول، اذا كنت تعتقد انها غير عادلة اضغط رفض
+       يختلف المبلغ في كل بطاقة بربح أو خسارة  
              <br/>   
-        
+             مع اختلاف في مستوى المخاطرة في كل بطاقة
              <br/>  <br/>  <br/>  
             </h3>
             {/* <button className='btntrvs m-0' onClick={()=>{setCard2(true);setCard1(false)}}>  {'< '} التالي</button> */}

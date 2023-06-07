@@ -120,12 +120,7 @@ const handleClick = () => {
                 handleClose={handleClose}
             />  
 
-            <div className='button-justifyer'>
-                <div onClick={() => handleClick()} className="btnt"> ابدأ</div>
-                <button className="btnt2" onClick={handleOpen}>فيديو توضيحى</button>
-            </div>
-
-   
+         
              {/* <Background height="100%"/> */}
             <ul className="circlesRisk" style={{ height:"100%" }}>
         <li></li>
