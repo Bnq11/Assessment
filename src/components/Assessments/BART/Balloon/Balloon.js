@@ -113,6 +113,7 @@ function Balloons(){
             setnum(num+1)
             if (num === 15)
             {
+               CalculateScore ();
             setRiskRatio( (Risk / 15)*100 );
             setOpenPopup(true)
             }
@@ -179,6 +180,7 @@ function Balloons(){
             setnum(num+1)
             if (num === 15)
             {
+               CalculateScore ();
             setRiskRatio( (Risk / 15)*100 );
             setOpenPopup(true)
             }
@@ -236,6 +238,7 @@ function Balloons(){
             setnum(num+1)
             if (num === 15)
             {
+            CalculateScore ();
             setRiskRatio( (Risk / 15)*100 );
             setOpenPopup(true)
             }
@@ -303,6 +306,7 @@ function collect(score){
     ])
     if (num === 15)
     {
+      CalculateScore ();//===========================
       setRiskRatio( (Risk / 15)*100 );
       Swal.fire({
         title: "!ممتاز ",
