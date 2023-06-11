@@ -340,7 +340,7 @@ if ( num < 127 ){
     }).then(() => {
     // Reload the page to restart the game
     //  window.location.reload();
-    navigate("/Done")
+    // navigate("/Done")
     }); 
    }}
 }else {
@@ -359,29 +359,7 @@ if ( num < 127 ){
    }     
 }
 async function CalculateScore (){
-    const requestBody = {
-        serial_number: query,
-        assessment_id: query2,
-        type: 'attention',
-        attention: [
-          { total_time: TotalTime, total_score: Score, score_64: WCST64,time_64:ConsumedTime }
-        ]
-      };
-      try{
-        const res = await addScore(requestBody)
-    
-        if(res.status ===200){
-          console.log('success')
-          navigate("/Done")
-          //TODO: navigate to last page here 
-    
-        }
-      }
-      catch(e){
-       console.log(e)
-      //  err_alert();
-       //TODO: show an error alert here 
-      }
+   
     if ( num < 65 ){
     // Correct cards %
      setWCST64((WCST64/64) * 100);
@@ -394,12 +372,38 @@ async function CalculateScore (){
     }else{
      // Correct cards %
     setScore(Math.floor((Score/128) * 100 ));
+    var ScoreI = Math.floor((Score/128) * 100);
      // Time taken to perform the test.
      var hour = Math.floor((Time / 60 )/ 60);
      var min = Math.floor((Time / 60)- (hour*60)) ;
      var sec = Math.floor(Time - (min*60)) ;
      setTotalTime (hour + ':' + min + ':' + sec );
-     console.log("========",WCST64,ConsumedTime,Score,TotalTime)
+     var TotalTimeI = hour + ':' + min + ':' + sec;
+     console.log("========",WCST64,ConsumedTime,ScoreI,TotalTimeI)
+
+     const requestBody = {
+      serial_number: query,
+      assessment_id: query2,
+      type: 'attention',
+      attention: [
+        { total_time: TotalTimeI, total_score: ScoreI, score_64: WCST64,time_64:ConsumedTime }
+      ]
+    };
+    try{
+      const res = await addScore(requestBody)
+  
+      if(res.status ===200){
+        console.log('success')
+        navigate("/Done")
+        //TODO: navigate to last page here 
+  
+      }
+    }
+    catch(e){
+     console.log(e)
+    //  err_alert();
+     //TODO: show an error alert here 
+    }
   }
  
 }

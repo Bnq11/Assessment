@@ -80,15 +80,15 @@ function Layout() {
       width: "400px",
     }).then(() => {
       // Reload the page to restart the game
-      navigate('/Done')
+      // navigate('/Done')
     });
   }
 
   // Check the count value after every update
   useEffect(() => {
     if (count === 100) {
-      CalculateScore ();
       done_alert();
+      CalculateScore ();
     }
   }, [count]);
 
@@ -104,7 +104,7 @@ function Layout() {
       assessment_id: query2,
       type: 'decisionMaking',
       risk: [
-        { cash: Cash, gain: Gain, loss: Loss, repor:Report }
+        { cash: Cash, gain: Gain, loss: Loss, repor: Report }
       ]
     };
   

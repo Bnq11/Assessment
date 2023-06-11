@@ -319,7 +319,7 @@ function collect(score){
     }).then(() => {
     // Reload the page to restart the game
     //  window.location.reload();
-    navigate("/Done")
+    // navigate("/Done")
 
     }); // final score
      }
@@ -337,13 +337,14 @@ async function CalculateScore (){
   setRiskRatio( (Risk / 15)*100 );
   var gain = Total;
   var Loss = loss;
+  var RiskRatioI = (Risk / 15)*100;
 
   const requestBody = {
     serial_number: query,
     assessment_id: query2,
     type: 'risk',
     risk: [
-      { risk_ratio: RiskRatio, gain: gain, loss: Loss }
+      { risk_ratio: RiskRatioI, gain: gain, loss: Loss }
     ]
   };
 

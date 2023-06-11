@@ -181,7 +181,7 @@ function Ultimatum() {
     }).then(() => {
       // Reload the page to restart the game
       // window.location.reload();
-      navigate("/Done")
+      // navigate("/Done")
     });
   }
   // Check the count value after every update

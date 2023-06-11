@@ -140,7 +140,7 @@ const handleResponse = (Letter) => {
   }).then(() => {
   // Reload the page to restart the game
   //  window.location.reload();
-  navigate("/Done")
+  // navigate("/Done")
 })
     //  setOpenPopup(true); /////////////// Finish Game
     

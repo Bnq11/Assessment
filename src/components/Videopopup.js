@@ -13,9 +13,9 @@ function Videopopup({ title, children, openPopup, handleClose}) {
       <Dialog style={{textAlign:"center",margin:"auto", width:"auto",height:"auto",position: 'absolute', }} open={openPopup} maxWidth="md" className='colorbg'>
           <DialogTitle >
               <div style={{ display: 'flex' }}>
-                  <Typography variant="h4" component="div" style={{ flexGrow: 1,}} >
+                  {/* <Typography variant="h4" component="div" style={{ flexGrow: 1,}} >
                       الفيديو التوضيحى
-                  </Typography>
+                  </Typography> */}
                   {/* <FaTimes
                     className="close-tag black"
                     onClick={handleClose}
