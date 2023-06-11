@@ -212,7 +212,7 @@ useEffect(() => {
       serial_number: query,
       assessment_id: query2,
       type: 'decisionMaking',
-      risk: [
+      decisionMaking: [
         { cash: "NA", gain: "NA", loss: "NA", report: FinalReport }
       ]
     };

@@ -121,6 +121,7 @@ function Clicked(){
         Update();
         setScore(0);
         if (num === 30){
+          CalculateScore ();
           Swal.fire({
             title: "!ممتاز ",
             text: "أنهيت الاختبار بنجاح",

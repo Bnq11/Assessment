@@ -103,7 +103,7 @@ function Layout() {
       serial_number: query,
       assessment_id: query2,
       type: 'decisionMaking',
-      risk: [
+      decisionMaking: [
         { cash: Cash, gain: Gain, loss: Loss, repor: Report }
       ]
     };
