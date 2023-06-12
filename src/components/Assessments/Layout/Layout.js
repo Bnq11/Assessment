@@ -49,15 +49,30 @@ function Layout() {
 
     // Calculate the amount earned or borrowed based on the selected card
     let amount = 0;
-    isAdvantageous
-      ? cardName === "A" || cardName === "B"
-        ? (amount = 100)
-        : (amount = 50)
-      : cardName === "A" || cardName === "B"
-      ? (amount = -500)
-      : cardName === "C"
-      ? (amount = -50)
-      : (amount = -250);
+   if( isAdvantageous )
+      { if (cardName === "A" || cardName === "B")
+        { (amount = 100)
+          setgain(gain+amount)
+        }
+         else
+        { (amount = 50)
+          setgain(gain+amount)
+        }
+  }
+      else {if (cardName === "A" || cardName === "B")
+      { (amount = -500)
+        setloss(loss + amount)
+      }
+      else {if (cardName === "C")
+      { (amount = -50)
+        setloss(loss + amount)
+      }
+      else
+      { (amount = -250)
+        setloss(loss + amount)
+      }
+    }
+    }
 
     // Update the amount of cash
     setCash((prevCash) => prevCash + amount);

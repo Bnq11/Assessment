@@ -362,7 +362,7 @@ async function CalculateScore (){
    
     if ( num < 65 ){
     // Correct cards %
-     setWCST64((WCST64/64) * 100);
+     setWCST64((WCST64/64) * 100+'%');
      // Time taken to perform the test.
      var hour = Math.floor((Time / 60 )/ 60);
      var min = Math.floor((Time / 60)- (hour*60)) ;
@@ -372,7 +372,7 @@ async function CalculateScore (){
     }else{
      // Correct cards %
     setScore(Math.floor((Score/128) * 100 ));
-    var ScoreI = Math.floor((Score/128) * 100);
+    var ScoreI = Math.floor((Score/128) * 100)+'%';
      // Time taken to perform the test.
      var hour = Math.floor((Time / 60 )/ 60);
      var min = Math.floor((Time / 60)- (hour*60)) ;

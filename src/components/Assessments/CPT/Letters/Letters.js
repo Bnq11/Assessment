@@ -100,7 +100,7 @@ useEffect(() => {
 
   if (minutes === 0 && seconds === 0 && milliseconds === 1) {
     setShowEndScreen({ ...showEndScreen, show: true });
-    CalculateScore ();
+    // CalculateScore ();
   }
   return () => clearInterval(interval);
 }, [milliseconds, seconds, minutes, , showEndScreen.show]);
@@ -163,6 +163,17 @@ const handleResponse = (Letter) => {
   setOneAns(0);
 }
 async function CalculateScore (){
+ 
+  var numOfLetters = Math.floor(Time / 1.5) ;
+  var Target = correctCount ;
+  var notTarget = incorrectCount ;
+  var numOfnotTarget = numOfLetters - (Target+notTarget) ;
+  var averageResponseTime = TotalResponseTime/(Target+notTarget)+" ثوانٍ ";
+  var hour = Math.floor((Time / 60 )/ 60);
+  var min = Math.floor((Time / 60)- (hour*60)) ;
+  var sec = Math.floor(Time - (min*60)) ;
+  var ConsumedTime = hour + ':' + min + ':' + sec ;
+  
   const requestBody = {
     serial_number: query,
     assessment_id: query2,
@@ -186,15 +197,7 @@ async function CalculateScore (){
    err_alert();
    //TODO: show an error alert here 
   }
-  var numOfLetters = Math.floor(Time / 1.5) ;
-  var Target = correctCount ;
-  var notTarget = incorrectCount ;
-  var numOfnotTarget = numOfLetters - (Target+notTarget) ;
-  var averageResponseTime = TotalResponseTime/(Target+notTarget)+" ثوانٍ ";
-  var hour = Math.floor((Time / 60 )/ 60);
-  var min = Math.floor((Time / 60)- (hour*60)) ;
-  var sec = Math.floor(Time - (min*60)) ;
-  var ConsumedTime = hour + ':' + min + ':' + sec ;
+ 
 }
 function err_alert() {
   return Swal.fire({

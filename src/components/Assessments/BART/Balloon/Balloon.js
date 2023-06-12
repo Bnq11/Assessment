@@ -337,7 +337,7 @@ async function CalculateScore (){
   setRiskRatio( (Risk / 15)*100 );
   var gain = Total;
   var Loss = loss;
-  var RiskRatioI = (Risk / 15)*100;
+  var RiskRatioI = Math.floor((Risk / 15)*100)+'%';
 
   const requestBody = {
     serial_number: query,

@@ -140,7 +140,7 @@ function Clicked(){
         // {setOpenPopup(true)}
 }
 async function CalculateScore (){
-  var RiskRatio = ( Risk / 30 )*100 ;
+  var RiskRatio = Math.floor(( Risk / 30 )*100 )+ '%';
   var gain = Total;
   var Loss = loss ;
   const requestBody = {
